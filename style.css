@@ -1,0 +1,124 @@
+/*
+Theme Name: Lifestyle wordpress Theme
+Theme URI: URL for FirstName Blank
+Author: Nathaniel Sari
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: Lifestyle wordpress theme
+*/
+
+
+<style>
+			html { color: black; background-color: green; text-align: center; font-family: sans-serif; magin: 0; padding: 0; }
+			body {  width: 100%; margin: 0 auto 0 auto; text-align: left; padding: 5px; background-color: #f5f5f5;  } /* 1250px */
+			
+			header { /* width: 1300px; */ width: 100%; height: 100px; display: table; background-color: #1f1f1f; box-shadow: 10px; /* border: 5px solid red; */ box-shadow: 0 7px 8px #cccccc; }
+			/* To add style to the footer I simply changed "header" to "header, footer". In other words both header and footer have the same style except for text alignment and background color which is set below. */
+			nav { /* width: 1300px; */ width: 100%; float: left; display: table; background-color: #1f1f1f; padding: -10px; }
+			nav.top { /* width: 1300px; */ float: left; display: table; }
+			article { margin-right: 25%; margin-left: 25%; margin-top: 10%; margin-bottom: 10%; width: 50%; display: table; height: 500px; background-color: white; box-shadow: 0 7px 8px #cccccc; border: 1px solid #d1d1d1;  } 
+			p.navtext {
+			color: white;
+			}
+			
+			
+			
+			footer { text-align: center; }
+			
+			/* section.author { height: 200px; width: 200px; border: 5px solid red; background-color: green; margin: 10px;
+			} */
+			
+/***** Author box area ****/
+			article.authorbox { border: 1px solid #d1d1d1; margin-right: 5%; margin-left: 5%; margin-top: 10%; margin-bottom: 10%; width: 90%; display: table; height: 600px;  background-color: white; padding:  5px; /* padding: 5%; */ /* padding: 0;*/}
+
+			section.authorleft { margin-top: 30px; margin-left: 2%;  margin-right: 2%; float: left; height: 40%; width: 20%; border: 1px solid #d1d1d1; background-color: green; /* margin-bottom: 1%; margin-top: 1%; */
+			}
+			section.authorright { margin-top: 30px; margin-left: 2%;  margin-right: 2%; float: right; height: 40%; width: 20%; border: 1px solid #d1d1d1; background-color: green; /* margin-bottom: 1%; margin-top: 1%; */
+			}
+			
+			div.bloggeroftheweek { border: 5px solid #d1d1d1; width: 30%; height: 20px;	}
+			
+			div.authortitle {width: 100%; height: 20px; border: 1px solid #d1d1d1; color: red; }
+			
+			div.authorimage {width: 100%; height: 70%; border: 1px solid #d1d1d1;   }
+			
+/***** End Author box area ****/
+
+/***** Post content area ****/		
+			div.contentsidebar { float: right; width: 20%;  border: 5px solid red; height: 90%; position: relative; margin-top: 30px;
+			}
+			
+			article.content {width: 90%; border: 1px solid #d1d1d1; background-color: white; margin-right: 5%; margin-left: 5%; margin-top: 10%; margin-bottom: 10%; display: table; height: 1100px;	
+			}
+			
+			section.contentleft { margin-top: 30px; margin-left: 3%;  margin-right: 2%; float: left; height: 29%; width: 20%; border: 1px solid #d1d1d1; background-color: green; /* margin-bottom: 1%; margin-top: 1%; */
+			}
+			section.contentright { margin-top: 30px; margin-left: 2%;  margin-right: 2%; float: right; height: 45%; width: 20%; border: 1px solid #d1d1d1; background-color: green; /* margin-bottom: 1%; margin-top: 1%; */
+			}
+			
+			div.newposts {width: 30%; height: 30px; border: 1px solid #d1d1d1;
+			}
+			
+			div.postauthor {width: 100%; height: 20px; border: 1px solid #d1d1d1;}
+			
+			div.postimage {width: 100%; height: 50%; border: 1px solid #d1d1d1;}
+			
+			div.postimagetitle {width: 100%; height: 20px; border: 1px solid #d1d1d1;  }
+			
+			
+/***** End Post content area ****/
+
+			div.postbox {border: 1px solid #ff0000; width: 100%; position: absolute; bottom: 1px; padding: 0; }
+			div.postcontentbox {border: 1px solid #000000; float: left; width: 20%; height: 33%; margin: 10px; position: relative; }
+			
+			
+			
+			/* Below I have added background colors so you can see where each element is. You can delete them if you want. */
+			footer { background-color: orange; width: 100%; height: 150px; display: table; }
+			div.sidebar { background-color: pink; height: 450px; width: 300px; float: right; margin: 20px; }
+			div.sidebar2 { background-color: pink; height: 450px; width: 300px; float: right; }
+			div.sidebarbox { border: 5px; float: right; background-color: red; }
+			h1.logo {text-align: center; margin: 50px; font-size: 28px; border: 10px; color: white;	}
+			h2.postheader { position: absolute; top: 1px; font-size: 15px; }
+			p.author {position: absolute; top: -18px; }
+			ul {
+    list-style-type: none;
+   /* margin: 0;
+    padding: 0; */
+	padding: 2px;
+	margin: -10px;
+    overflow: hidden;
+	width: 100%;
+	color: white;
+}
+
+li {
+    float: left;
+	width: 8%;
+	font-size: 12px;
+	padding: -5px; 
+	color: white
+}
+
+
+a:link, a:visited {
+    display: block;
+    width: 100%; /* 120px */
+	height: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: 98bf21px; /* 98bf21 */ /* http://i61.tinypic.com/2zpiic4.png */ /* background-color: #98bf21; */ /* background-image: url('http://i61.tinypic.com/2zpiic4.png'); */
+	text-align: center;
+    padding-top: 12px; /* 4px */
+    text-decoration: none;
+    text-transform: uppercase;
+	
+}
+
+a:hover, a:active {
+    /* background-color: #7A991A; */ /* 7A991A */
+	/* height: 100%; */
+	text-decoration: underline;
+}
+		
