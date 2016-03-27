@@ -1,207 +1,145 @@
-
 <?php get_header(); ?>
-		<nav>
-			<!-- <ul>
-				<li><a href="index.htm">home</a></li>
-			</ul> -->
-			
-		<!-- <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul> -->
 
-		</nav>
 
-		
-	<!--	<div class="sidebar">
-		sidebar
-		</div> -->
-
+<!-- Featured post --> 
+    <section class="row black">
+		<div class="twelve columns">
 		
 		
- 		<article>
- 			<h1>The article title</h1>
+		
+	<section class="row red margin">
+		<div class="six columns red">
+	
+Empty space
+           
+    
+			</div>
 			
-<!-- BEGIN LOOP -->
+			<div class="six columns red">
+	
+Empty space
+           
+    
+			</div>
 			
-            <?php if (have_posts()) :      
-                while (have_posts()) : the_post(); ?> 
-				<!-- this is going to happen over and over again -->
-                  <div class="postcontentbox">  <h2><?php the_title(); ?></h2>
+    </section>
+   
+ <!-- End featured post -->
+    
+    
+    
+ <!-- Authors -->
+    
+   <section class="row red margin">
+		
+<div class="twelve columns yellow">	
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+</div>
+
+<div class="twelve columns yellow">	
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+<div class="three columns authorheight">  
+Empty </div>
+
+</div>
+
+<!-- <div class="authorcon row">  
+Empty </div>
+<div class="authorcon row">  
+Empty </div>
+<div class="authorcon row">  
+Empty </div>
+
+<div class="authorcon row">  
+Empty </div> -->
+
+
+    </section>
+    	
+	
+		
+	
+
+          
+            
+            <section class="row red margin">
+                <div class="sidebar row">
+ sidebar
+ </div>
+ <!-- BEGIN LOOP -->
+       <?php 
+            if ( have_posts() ) {
+                while ( have_posts() ) {
+                    the_post();?>
+					<div class="maincon row">  
 					<p> By <?php the_author(); ?> </p>
-						<div class="postbox"> <?php the_excerpt();?> </div> </div>
-						<?php 
-                endwhile; 
-            endif; ?> 
+					<p> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+				<center>	<?php if ( has_post_thumbnail() ) {
+				the_post_thumbnail('thumbnail');	
+					} ?> </center>
+
+					<?php the_excerpt();?>
+					<a href="<?php the_permalink(); ?>"> Read More.... </a>  </div>
+		<?php     } // end while
+            } // end if
+            ?>
+
+ 
+          
 			
-			
-<!-- END LOOP -->
+    </section>
+    
+    
+    
+    
+     <section class="row red margin">
+		<div class="twelve columns red">
 	
-			
-			
-			
-		</article>
-		
-		<article class="authorbox">
-		<center> <div class="bloggeroftheweek">
-		Blogger of the week
-		</div> </center>
-		
-		
-		<section class="authorleft">
-		<div class="authortitle">
-		Author title
-		</div>
-		
-	<div class="authorimage"> 
-	Author image
-	</div>
+<!-- BEGIN LOOP -->
+           
+            
+       <?php 
+            if ( have_posts() ) {
+                while ( have_posts() ) {
+                    the_post();?>
+					<div class="border"> <div class="postbox"> <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> </div>
+					<?php if ( has_post_thumbnail() ) {
+				the_post_thumbnail('thumbnail');	
+					} ?>
 
-		</section>
-		
-		
-		
-		<section class="authorleft">
-		<p class="navtext"> dfdf </p>
-		</section>
-		
-		<section class="authorright">
-		dfdf
-		</section>
-		
-		<section class="authorright">
-		dfdf
-		</section>
-		
-		
-		<section class="authorleft">
-		dfdf
-		</section>
-		
-		
-		
-		<section class="authorleft">
-		dfdf
-		</section>
-		
-		<section class="authorright">
-		dfdf
-		</section>
-		
-		<section class="authorright">
-		dfdf
-		</section>
-		
-		
-	<!--	<section class="author">
-		dfdf
-		</section>
-		<section class="authorright">
-		dfdf
-		</section>
-		<section class="authorright">
-		dfdf
-		</section>
-	
-	<section class="author">
-		dfdf
-		</section> -->
-		
-		</article>
-		
-	<article class="content">
-	<div class="newposts">
-	<p> New posts </p>
-	</div>
+					<?php the_excerpt();?>
+					<a href="<?php the_permalink(); ?>"> Read More.... </a>  </div>
+		<?php     } // end while
+            } // end if
+            ?>
 
-	
-	
-	<div class="contentsidebar">
-
-	</div>
-	
-		<!-- BEGIN LOOP -->
-        <?php if (have_posts()) :      
-                while (have_posts()) : the_post(); ?> 
-				<!-- this is going to happen over and over again -->
-                  <div class="postcontentbox">  <h2 class="postheader"><?php the_title(); ?></h2> 
-				  <?php the_post_thumbnail(); ?>
-					<p class="author"> By <?php the_author(); ?> </p>
-						<div class="postbox"> <?php the_excerpt();?> </div>  </div>
-						<?php 
-                endwhile; 
-            endif; ?> 
-
-<!-- END LOOP -->
-
-<!-- original post html	<section class="contentleft">
-		<div class="postauthor">Author name
-		</div>
-		<div class="postimage">
-		post image
-		</div>
-		<div class="postimagetitle">
-	
-	
-	
-		</div>
-		</section> -->
-		
-		
-			<!-- <section class="contentleft">
-		<div class="postauthor">Author name
-		</div>
-		<div class="postimage">
-		post image
-		</div>
-		<div class="postimagetitle">
-	
-	
-	
-		</div>
-		</section> -->
-		
-	
-	
-<!--
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
-
-	
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
-		
-	<section class="contentleft">
-		dfdf
-		</section>
--->
-
-		
-	</article>
-		
+ 
+            
+            
+            
+			</div>
+    </section>
+    
+    
 <?php get_footer(); ?>
-	

@@ -1,7 +1,10 @@
-	<footer>
-			<h1>About Me</h1>
-			<p>&copy;</p>
-		</footer>
-		<?php wp_footer(); ?>
-	</body> 
+<!-- BEGINNING OF FOOTER - END SECTION CONTENT -->
+            <footer class="row">
+                <div class="twelve columns">
+                    <p>Footer content goes here.</p>
+                </div>
+            </footer>
+        </div> <!-- ends container -->
+    <?php wp_footer(); ?>
+    </body>
 </html>
