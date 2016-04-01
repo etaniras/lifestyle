@@ -1,9 +1,11 @@
 <?php get_header(); ?>
-    <section class="row">
-		<div class="two columns">
-			&nspb;
-		</div>
-     <div class="eight columns">
+
+<div class="twelve columns margin lpad white">
+
+  <div class="row lpad">  
+
+		
+     <div class ="nine columns pageborder">
             <?php 
 			if (have_posts()) {        
 				while (have_posts() ) {
@@ -13,12 +15,17 @@
 				} // end while;
             } // endif; 
 			?>
-        </div>
+			</div>
+			
+			 <div class="three columns pageborder sbwidth">
+		<?php include 'pagesidebar.php';?>
+		</div> 
+		
+			</div>
+ 
+       
 	
+</div>
 
-        <div class="two columns">
-            &nspb;
-        </div>
 
-    </section>
 <?php get_footer(); ?>

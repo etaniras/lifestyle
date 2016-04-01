@@ -1,8 +1,10 @@
 <?php get_header(); ?>
     
-	<div class="red row margin lpad">
+	<div class="row">
 <!-- begin sidebar -->
-
+<div class="three columns">
+	<?php get_sidebar(); ?>
+</div>
 <!-- end sidebar -->
 	<div class="nine columns">
 		<?php if (have_posts()) :
@@ -12,17 +14,7 @@
 			endwhile;
 		endif; ?>
 	</div>
-	
-	
-	
-<div class="three columns">
-	
-	<?php include 'pagesidebar.php';?>
-</div>
-
 </div>
 
 <?php get_footer(); ?>
-	
-	
 	

@@ -31,11 +31,11 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1160px; /* 960px;  */
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  color: #ff0000;
+  /* color: #ff0000; */
   background-color: #f5f5f5;
    
 
@@ -48,6 +48,11 @@
   box-sizing: border-box;
   }
   
+.tmarg {
+margin-top: 10%;
+
+}
+  
 .border {
 border: 1px solid #ff0000;
 width: 32.5%;
@@ -55,36 +60,161 @@ float: left;
 }
 
 .red {
+border: 1px solid #ccc;
+background-color: #fff;
+box-shadow: 0 2px 3px #cccccc;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+
+float: none;
+
+}
+
+
+.featuredbox {
+border: 1px solid #ccc;
+background-color: #fff;
+box-shadow: 0 2px 3px #cccccc;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+padding-top: 1%;
+float: none;
+
+}
+
+
+
+.likebtn-wrapper {
+/* border: 1px solid #ff0000; */
+margin-left: 30%;
+margin-right: 30%;
+padding: 2%;
+}
+
+
+
+.authorbox {
+border: 1px solid #ccc;
+background-color: #fff;
+box-shadow: 0 2px 3px #cccccc;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+padding-top: 1%;
+
+}
+
+.amarg {
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+
+}
+
+.leftfloat {
+float: left;
+
+}
+
+.mcon {
 border: 1px solid #ff0000;
 background-color: #fff;
 }
 
-.green{
-border: 1px solid #00FF00 ;
+.black{
+border: 1px solid #000000;
+color: #1f1f1f;
+text-align: center;
+padding: 1%;
+
+}
+
+.pageborder {
+
+color: #1f1f1f;
+
+padding: 1%;
+
+}
+
+.fboxx{
+/* border: 1px solid #000000; */
+color: #1f1f1f;
+text-align: center;
+padding: 1%;
+max-width: 60%;
+}
+
+
+
+.sbox {
+/* border: 1px solid #000000; */
+color: #1f1f1f;
+text-align: center;
+}
+
+.sboxright {
+float: right;
+}
+
+
+.fbox {
+border: 1px solid #000000;
+color: #1f1f1f;
+text-align: center;
+padding: 1%;
+}
+
+.lfloat {
+/* border: 1px solid #000000; */
+float: right;
+}
+
+
+.catborder {
+border: 1px solid #ccc;
 color: #1f1f1f;
 }
 
-.blue{
-border: 1px dotted #0000FF ;
+.green{
+border: 1px solid #00FF00 ; 
+color: #1f1f1f;
+float: right;
 }
 
+.blue {
+/* border: 1px dotted #0000FF ; */
+}
 
+.bow {
+text-decoration: underline;
+color: #fff;
+
+}
 
 .margin {
 margin-top: 10%;
 }
 
 .maincon {
-border: 1px dotted #ff0000;
-width: 25%;
+ border: 1px dotted #ffffff; 
+width: 24%;
 float: left;
 height: 350px;
+margin-right: 1%;
 }
 
 .hcolor {
 background-color: #1f1f1f;
-box-shadow: 0 1px 2px #cccccc;
-border-bottom: 1px solid #cccccc;
+box-shadow: 0 0 0 #b2b2b2 ; /* box-shadow: 0 1px 2px #b2b2b2: */ 
+border-bottom: 1px solid #b2b2b2 ; /* b2b2b2 */
+z-index: 2;
+}
+
+.navcolor {
+background-color: #1f1f1f;
 }
 
 .authorcon {
@@ -100,10 +230,10 @@ padding-left: 10%;
 }
 
 .sidebar {
-border: 1px dotted #ff0000;
-width: 22%;
+/* border: 1px solid #dfdfdf; */
+width: 24%;
 float: right;
-height: 350px;
+/* height: 350px;*/
 
 }
 
@@ -114,9 +244,242 @@ font-size: 15px;
 
 div.contentbox {
 float: left;
-border: 1px solid #ff0000; 
+/* border: 1px solid #ff0000; */
 }
 
+div.titlebox {
+/* border: 1px solid #000; */
+/*top: 36%; */ /* -25px  */
+/* position: relative;
+padding-bottom: 1px; */
+margin-top: 1%;
+}
+
+div.imgbox {
+/* border: 5px solid #ff0000; */
+
+}
+
+.img {
+/* border: 5px solid #ff0000; */
+position: absolute;
+top: 30px;
+}
+
+.imgposition {
+margin-top: -18%;
+}
+
+.textpos {
+/* border: 5px solid #ff0000; */
+margin-top: -7%; /* 35px; */
+}
+
+.authorpos {
+margin-bottom: 20px;
+
+}
+
+.readpos {
+/* border: 5px solid #000000; */
+position: relative;
+bottom: 0;
+}
+
+p.newestposts {
+font-size: 25px;
+color: #5c5c5c;
+font-family: 'Roboto', sans-serif;
+text-decoration: bold;
+font-weight: 700;
+margin-left: 1%;
+margin-top: 2%;
+}
+
+.widget-sidebar {
+/* color: #ff0000; */
+text-decoration: bold;
+
+}
+
+.cattitle {
+margin-top: 3%;
+margin-bottom: 3%;
+text-decoration: bold;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+color: #5c5c5c;
+}
+
+.grey {
+border-bottom: 1px solid #cccccc;
+color: #1f1f1f;
+margin-bottom: 5%;
+}
+
+.marginsidebar {
+margin-top: 5%
+}
+
+.apic {
+height: 150px;
+/* border: 1px solid #ff0000; */
+
+}
+
+.marginbot {
+margin-bottom: 1%;
+
+}
+
+.left {
+float: left;
+width: 75%;
+border: 1px solid #ff0000;
+}
+
+.lpad {
+padding-left: 1%;
+padding-right: 1%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+.white {
+
+border: 1px solid #ccc;
+background-color: #fff;
+box-shadow: 0 2px 3px #cccccc;
+
+
+}
+
+.sbwidth {
+width: 120%;
+margin-left: -10%;
+
+}
+
+.featured {
+border: 1px solid #ccc;
+background-color: #fff;
+box-shadow: 0 2px 3px #cccccc;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 1%;
+}
+
+.vlog {
+border-top: 1px solid #d8d8d8;
+border-right: 1px solid #d8d8d8;
+border-left: 1px solid #d8d8d8;
+background-color: #fafafa;
+color: #1f1f1f;
+text-align: center;
+padding-top: 1%;
+padding-bottom: 1%;
+box-shadow: 0 2px 3px 1px #cccccc;
+}
+
+.atitle {
+/* border-top: 1px solid #000;
+border-right: 1px solid #000;
+border-left: 1px solid #000; */
+background-color: #fafafa;
+color: #3b393c ; /* 1f1f1f */
+text-align: center;
+margin-bottom: 2%;
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+text-decoration: bold;
+font-weight: 700;
+font-color: #ff0000; /* 3b393c */
+}
+
+.titlea {
+/* border: 1px solid #000000; */
+color: #1f1f1f;
+text-align: center;
+}
+
+.ctext {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+color: #3b393c ;
+font-weight: 400;
+}
+
+a.ctext:hover {
+color: #5c5c5c;
+text-decoration: underline;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 700;
+}
+
+a.ctext:link {
+color: #5c5c5c;
+font-weight: 700;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+}
+
+a.ctext:active {
+color: #5c5c5c;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 700;
+}
+
+
+a.ctext:visited {
+color: #5c5c5c;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 700;
+}
+
+.htitle {
+/* border: 1px solid #ff0000;*/
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 30px;
+color: #fff;
+margin-bottom: 2%;
+margin-top: 2%;
+}
+
+a.htitle:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+a.htitle:link {
+color: #fff;
+}
+
+a.htitle:active {
+color: #fff;
+}
+
+
+a.htitle:visited {
+color: #fff;
+}
+
+.blank-menu-header ul li a {
+color: #fff;
+}
+
+
+
+.contenttitle {
+font-size: 20px;
+}
+
+.wp-pagenavi {
+border-radius: 5px;
+}
 
 
 /* For devices larger than 400px */
@@ -197,7 +560,8 @@ border: 1px solid #ff0000;
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #f5f5f5; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -209,9 +573,9 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300; }
+   margin-top: 0;
+  /* margin-bottom: 2rem; */
+  font-weight: 300; } 
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
@@ -236,9 +600,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+   (color: #5c5c5c; ) } 
 a:hover {
-  color: #0FA0CE; }
+  /* color: #0FA0CE; */ } 
 
 
 /* Buttons
@@ -366,7 +730,8 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+ /* list-style: circle inside; */
+  list-style: none;}
 ol {
   list-style: decimal inside; }
 ol, ul {
